@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-warning">
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="" class="logo"> Trailed
+                </a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Post</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="mt-5 pt-5">
+            <form action="#" class="bg-light mt-5 p-5 rounded">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-2 align-self-center">
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" name="title" id="title" class="form-control"
+                                placeholder="Title of your  Post" maxlength="75" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-2 align-self-start">
+                            <label for="brief">Breif Description</label>
+                        </div>
+                        <div class="col-md-10">
+                            <textarea name="brief" id="brief" class="w-100" rows="2"
+                                placeholder="Brief Description of place within 250 words" maxlength="250"
+                                required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-2 align-self-start">
+                            <label for="desc">Description</label>
+                        </div>
+                        <div class="col-md-10">
+                            <textarea name="desc" id="desc" class="w-100" rows="10"
+                                placeholder="Describe your visit here" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-2 align-self-start">
+                            <label for="photos">Add Images</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="file" name="photos" id="photos" class="form-control bg-none" accept="image/*" multiple required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="offset-md-2 col-md-10">
+                            <input type="submit" name="submit" id="submit" class="btn btn-warning">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer class="bg-dark text-light p-3 mt-5">
+            <div class="row">
+                <div class="offset-md-2 col-md-4 text-center">
+                    <h5>Contact Us</h5>
+                    <p><i class="fa fa-map-marker text-danger"></i> ABC avenue, Banglore, Karnatka</p>
+                    <p><i class="fa fa-phone"></i> (+91) 000-000-0000</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="">Find us on</h5>
+                    <div>
+                        <a href="#"><i class="fa fa-facebook fa-2x p-3"></i></a>
+                        <a href="#"><i class="fa fa-google fa-2x p-3"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x p-3"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="h4 text-center align-self-center">Trailed &copy;. All Rights Reserved</div>
+        </footer>
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
