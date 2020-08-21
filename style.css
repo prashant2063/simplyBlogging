@@ -1,8 +1,16 @@
+body{
+    background-color: #343a40;
+}
+footer{
+    background-color: #f8f9fa;
+    color: #343a40 ;
+}
 #login, #login .container-fluid, #login .container-fluid .row:first-child{
     height:100vh;
 }
 #login{
     background-image: url(images/bg-login.jpg);
+    object-fit: cover;
 }
 .logo{
     width: 75px;
