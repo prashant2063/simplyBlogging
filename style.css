@@ -1,3 +1,11 @@
+@media only screen and (max-width: 768px){
+    .carousel-img{
+        /* object-fit: unset !important; */
+        height: unset !important;
+        max-height: 300px !important;
+        min-height: 300px !important;
+    }
+}
 body{
     background-color: #343a40;
 }
@@ -5,12 +13,20 @@ footer{
     background-color: #f8f9fa;
     color: #343a40 ;
 }
+.carousel-img{
+    width: 100%;
+    max-height: 500px;
+    min-height: 500px ;
+    object-fit: cover;
+    margin: 0 auto;
+}
 #login, #login .container-fluid, #login .container-fluid .row:first-child{
     height:100vh;
 }
 #login{
     background-image: url(images/bg-login.jpg);
-    object-fit: cover;
+    background-size: cover;
+    /* object-fit: cover; */
 }
 .logo{
     width: 75px;

@@ -31,11 +31,10 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Post</a>
                         </li>
+                        <a class="nav-link" id="contact-us" type="button" data-toggle="modal"
+                                data-target="#contact-form">Contact</a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                     </ul>
                 </div>
@@ -105,6 +104,57 @@
             <hr class="bg-light">
             <div class="h4 text-center align-self-center">Trailed &copy;. All Rights Reserved</div>
         </footer>
+
+        <div id="contact-form" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contact-form" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-light">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="my-modal-title">Contact Us</h5>
+                        <button class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input id="name" class="form-control" type="text" name="name" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input id="email" class="form-control" type="email" name="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="message">Message</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <textarea name="message" id="message" class="w-100" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group text-right">
+                                <input type="submit" name="submit" id="sumbit" class="btn btn-info">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- <script src="index.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
